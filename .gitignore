@@ -1,0 +1,14 @@
+
+# Old codebase
+Vigenere/
+
+# venv specific
+.venv/
+
+# uv specific
+.uv/
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
