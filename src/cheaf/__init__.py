@@ -1,2 +1,3 @@
-def main() -> None:
-    print("Hello from cheaf!")
+#!/usr/usr/bin/env python3
+
+from . import io
