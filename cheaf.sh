@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-uv sync --quiet;
-uv run cheaf "$@";
