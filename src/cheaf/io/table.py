@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import os
+import json
 
 
 
@@ -19,4 +20,14 @@ def getPath() -> str:
             "data",
             "ascii_table.json",
     )
+
+
+def read(path: str) -> any:
+    if not isinstance(path, str):
+        raise TypeError(f"can't use non-str of type '{type(lenght).__name__}' as path")
+    if not os.path.isfile(path):
+        raise FileNotFoundError(f"file '{path}' not found")
+
+    with open(path) as file:
+        return json.load(file)
 
