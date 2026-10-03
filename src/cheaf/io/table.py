@@ -12,3 +12,11 @@ def getRoot() -> str:
 
     return dir
 
+
+def getPath() -> str:
+    return os.path.join(
+            getRoot(),
+            "data",
+            "ascii_table.json",
+    )
+
