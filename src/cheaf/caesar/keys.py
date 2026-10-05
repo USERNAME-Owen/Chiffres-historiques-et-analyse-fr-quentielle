@@ -1,15 +1,13 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python 3
 
 import random
-import json
+
+from cheaf import io
 
 
 
-def gen(lenght: int) -> str:
-    if not isinstance(lenght, int):
-        raise typeError(f"can't use non-int of type '{type(lenght).__name__}' as lenght")
-    else if lenght < 0:
-        raise valueError("lenght need to be greater or equal than 0")
-
-    table = 
+def genChar() -> str:
+    ascii_table: dict[str:str] = io.table.read(io.table.getPath())
+    
+    return random.choice(tuple(ascii_table.values()))
 
