@@ -24,7 +24,7 @@ def getPath() -> str:
 
 def read(path: str) -> any:
     if not isinstance(path, str):
-        raise TypeError(f"can't use non-str of type '{type(lenght).__name__}' as path")
+        raise TypeError(f"can't use non-str of type '{type(path).__name__}' as path")
     if not os.path.isfile(path):
         raise FileNotFoundError(f"file '{path}' not found")
 
