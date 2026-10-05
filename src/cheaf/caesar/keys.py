@@ -9,5 +9,6 @@ from cheaf import io
 def genChar() -> str:
     ascii_table: dict[str:str] = io.table.read(io.table.getPath())
     
-    return random.choice(tuple(ascii_table.values()))
+    values_list = tuple(ascii_table.values())
+    return random.choice(values_list)
 
