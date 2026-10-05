@@ -7,8 +7,8 @@ from cheaf import io
 
 
 def genKey() -> str:
-    ascii_table: dict[str:str] = io.table.read(io.table.getPath())
+    ascii_table: dict[str:int] = io.table.read(io.table.getPath())
     
-    values_list = tuple(ascii_table.values())
+    values_list = tuple(ascii_table.keys())
     return random.choice(values_list)
 
