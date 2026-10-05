@@ -11,7 +11,7 @@ def charSubs(plain_char: str, key: str) -> str:
     elif not isinstance(key, str):
         raise TypeError(f"can't use non-str of type '{type(key).__name__}' as path")
 
-    ascii_table: dict[str:int] = io.table.read(io.table.getPath())
+    ascii_table: dict[str:int] = io.table.getTable()
     ascii_values: tuple[str] = tuple(ascii_table.keys())
 
     cipher_index: int = (ascii_table[plain_char] - 32 + ascii_table[key] - 32) % len(ascii_table)

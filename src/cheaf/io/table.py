@@ -31,3 +31,7 @@ def read(path: str) -> any:
     with open(path) as file:
         return json.load(file)
 
+
+def getTable() -> dict[str:int]:
+    return read(getPath())
+
