@@ -23,6 +23,7 @@ chmod +x cheaf
 
 ### Executing program
 
+_not working yet_
 ``` bash
 ./cheaf [arguments]
 ```
