@@ -2,4 +2,5 @@
 
 from . import io
 from . import caesar
+from . import vigenere
 
