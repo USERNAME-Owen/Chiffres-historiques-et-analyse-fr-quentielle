@@ -3,9 +3,7 @@ name = "cheaf"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-authors = [
-    { name = "Oscar L'Host", email = "oscar.lhost@epita.fr" }
-]
+authors = []
 requires-python = ">=3.14"
 dependencies = []
 
